@@ -25,3 +25,14 @@ for elemen in var_list:
 # define array value
 var_arr = [9, 8, 7, 6, 5, 4, 3, 2, 1]
 print(var_arr)
+
+# define default value
+name_var = [0 for i in range(10)]
+print(name_var)
+
+# change default with new value
+for i in range(10):
+    name_var[i] = i
+print(name_var)
+
+print(name_var[0])
