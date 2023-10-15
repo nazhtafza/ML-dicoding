@@ -31,3 +31,23 @@ var_mat = [[1, 2, 3, 4],
            [9, 10, 11, 12]]
 
 print(var_mat[0][1])  # -> mengakses pada baris/index ke 0 dan kolom ke-1
+
+# membuat matriks 2 x 2
+print("== Matriks 2x2 ==")
+var_mat = [[5, 0],
+           [1, -2]]
+
+def_mat = [[0 for j in range(2)] for i in range(2)]
+
+# looping dengan dua kondisi
+for i in range(len(var_mat)):
+    for j in range(len(var_mat[0])):
+        def_mat[i][j] = var_mat[i][j]*2
+print(def_mat)
+
+
+# matriks 2 x 2 menggunakan numpy
+var_math = numpy.array([[5, 0],     # tidak perlu menggunakan perulangan default matriks
+                        [1, -2]])
+res = var_math*2
+print(res)
