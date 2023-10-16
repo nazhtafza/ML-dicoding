@@ -25,3 +25,12 @@ print(f"keliling lingkaran: {lingkaran_kel}")
 # luas segitiga
 
 print(f"hasil luas segitiga {l_segitiga(20, 10)}")
+
+
+# Prosedur
+def greeting():
+    print("halo selamat datang")
+
+
+# call
+greeting()
