@@ -52,3 +52,43 @@ print(f"Pertambahan attack ultraman {ultraman1.attack}")
 
 # Static Method
 print("== Static Method ==")
+
+# mendefinisikan class Mahasiswa
+
+
+class Mahasiswa:
+    def __init__(self, nama, nim) -> None:
+        self.nama = nama
+        self.nim = nim
+# mendefinisikan dekorator statistic method
+
+    @staticmethod
+    def Prodi():
+        print("mahasiswa teknik informatika")
+
+
+# Memanggil method prodi
+Mahasiswa.Prodi()
+mahasiswa1 = Mahasiswa("Nazhat Afza Zain", 202251042)
+
+# memanaggil parameter nama dan nim
+print(f"{mahasiswa1.nama} dengan nim {mahasiswa1.nim}")
+
+# CLASS METHOD
+print("== CLASS METHOD ==")
+
+
+class Mobil:
+    def __init__(self, merek) -> None:
+        self.merek = merek
+
+    # mendeklarasikan dekorator class method
+    @classmethod
+    def intro_mobil(abc):
+        print("ini class mobil")
+
+
+# mendefinisikan parameter merek
+Mobil.intro_mobil()
+mobil = Mobil("Toyota Hilux Timur Tengah")
+print(f"merek mobil : {mobil.merek}")
